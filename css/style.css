@@ -544,15 +544,15 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   position: relative;
   color: #fff;
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   line-height: 50px;
   font-size: 1.4em;
   text-align: center;
   position: absolute;
   top: 16px;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -100px;
   background-color: #999999;
   z-index: 100;
   -webkit-border-radius: 50%;
