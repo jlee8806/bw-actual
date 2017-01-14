@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav a {
   padding: 5px 10px;
-  color: D65A71;
+  color: #D65A71;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -133,7 +133,8 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline;
 }
 .fh5co-nav ul li a {
-  font-size: 14px;
+  margin-top: 5px;
+  font-size: 18px;
   padding: 30px 10px;
   text-transform: uppercase;
   color: #D95B72;
@@ -1789,13 +1790,10 @@ form input, select{
   outline: none;
   border: none;
 }
-table{
+#info table{
   width: 90%;
 }
 #id_message{
   width:100%;
-}
-table{
-  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */

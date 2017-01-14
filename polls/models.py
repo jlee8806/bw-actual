@@ -20,3 +20,4 @@ class rsvp(models.Model):
         default=Yes,
         )
     message = models.CharField(max_length=100,blank=True, default='Send up a message')
+    created_at = models.DateTimeField(auto_now_add=True)

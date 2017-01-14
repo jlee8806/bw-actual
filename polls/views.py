@@ -7,6 +7,7 @@ from django.template.loader import get_template
 from .forms import rsvp_form
 from .models import rsvp
 from django.contrib import messages
+from django.http import Http404
 
 def index(request):
 
@@ -36,6 +37,8 @@ def rsvp_page(request):
     return render(request, 'polls/rsvp.html', context)
 
 def info(request):
+    if not request.user.is_staff or not request.user.is_superuser:
+        return redirect('index')
     queryset_list = rsvp.objects.all().order_by('name')
     context = {
         'object_list': queryset_list,
