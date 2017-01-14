@@ -1,0 +1,29 @@
+{% extends 'polls/base.html' %}
+{% block content%}
+
+<br><br><br><br><br>
+<div class="info">
+
+
+<table class='table table-bordered fixed'>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>guest</th>
+      <th>email</th>
+      <th>attending?</th>
+      <th>message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>{% for obj in object_list %}
+      <td>{{obj.name}}</td>
+      <td>{{obj.guest}}</td>
+      <td>{{obj.email}}</td>
+      <td>{{obj.attend}}</td>
+      <td>{{obj.message}}</td>
+    </tr>{% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}
