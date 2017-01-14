@@ -9,5 +9,4 @@ urlpatterns = [
     url(r'^gallery/$', views.gallery, name='gallery'),
     url(r'^rsvp/$', views.rsvp_page, name='rsvp'),
     url(r'^info/', views.info, name='info'),
-    url(r'^rsvptest/$', views.rsvptest, name='rsvpt'),
 ]
