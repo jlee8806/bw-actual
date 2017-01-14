@@ -79,7 +79,6 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<!-- <h1>Contact Us</h1> -->
 						</div>
 					</div>
 				</div>
@@ -98,50 +97,41 @@
 		</div>
 	</div>
 
-	<div class="fh5co-section">
+	<div class="fh5co-section1">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
 					<h3>Attending?</h3>
-					<form action="mailto:chewishwedding@gmail.com" method="post" enctype="text/plain">
+					<form method="POST" name="contactform" action="contact-form-handler.php">
 						<div class="row form-group">
 							<div class="col-md-6">
-								<input type="text" id="fname" class="form-control" placeholder="Your Name">
+								<input type="text" name="name" class="form-control" placeholder="Your Name">
 							</div>
 							<div class="col-md-6">
-								<!-- <label for="lname">Guest Name</label> -->
-								<input type="text" id="lname" class="form-control" placeholder="Guest Name">
+								<input type="text" name="guest" class="form-control" placeholder="Guest Name">
 							</div>
 						</div>
-
 						<div class="row form-group">
 							<div class="col-md-12">
-								<!-- <label for="email">Email</label> -->
-								<input type="text" id="email" class="form-control" placeholder="Email">
+								<input type="text" name="email" class="form-control" placeholder="Email">
 							</div>
 						</div>
-
 						<div class="row form-group">
 							<div class="col-md-12">
-								<!-- <label for="subject">Subject</label> -->
-								<!-- <input type="text" id="subject" class="form-control" placeholder="Your subject of this message"> -->
-								<select id='attend' class='form-control' placeholder='Attending?'>
+								<select name='attend' class='form-control' placeholder='Attending?'>
 									<option value="yes">Yes</option>
 									<option value="no">No</option>
 								</select>
 							</div>
 						</div>
-
 						<div class="row form-group">
 							<div class="col-md-12">
-								<!-- <label for="message">Message</label> -->
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Send up a Message!"></textarea>
+								<textarea name="message" cols="30" rows="10" class="form-control" placeholder="Send up a Message!"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="RSVP Now!" class="btn btn-primary">
 						</div>
-
 					</form>
 				</div>
 				<div class="col-md-5 col-md-pull-5 animate-box">
@@ -183,34 +173,26 @@
 							<div class="owl-carousel-fullwidth">
 								<div class="item">
 									<div class="testimony-slide active text-center">
-										<!-- <figure>
-											<img src="images/couple-1.jpg" alt="user">
-										</figure> -->
+
 										<span><a href="http://www.amazon.com" class="twitter">Amazon</a></span>
 										<!-- <blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
+											<p>"you can put words here if you want"</p>
 										</blockquote> -->
 									</div>
 								</div>
 								<div class="item">
 									<div class="testimony-slide active text-center">
-										<!-- <figure>
-											<img src="images/couple-2.jpg" alt="user">
-										</figure> -->
 										<span><a href="mcdonalds.com" class="twitter">McDonalds</a></span>
 										<!-- <blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
+											<p>you can put words here if oyu want</p>
 										</blockquote> -->
 									</div>
 								</div>
 								<div class="item">
 									<div class="testimony-slide active text-center">
-										<!-- <figure>
-											<img src="images/couple-3.jpg" alt="user">
-										</figure> -->
 										<span><a href="asdf" class="twitter">somewhere</a></span>
 										<!-- <blockquote>
-											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+											<p>you can put words here if oyu want.</p>
 										</blockquote> -->
 									</div>
 								</div>
